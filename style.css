@@ -1,3 +1,13 @@
+@media (max-width: 768px) {
+    /* Styles for mobile devices */
+    body {
+        font-size: 16px; /* Adjust font size */
+    }
+    .section {
+        margin: 10px; /* Adjust margins */
+    }
+}
+
 #labelforsetting,
 #labelforvisualmode,
 #switchforvisualmode:checked+#labelforvisualmode {
