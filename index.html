@@ -1,563 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-  <title>Abhishek Kumar | Ethical Hacker & Cybersecurity</title>
-  <link rel="icon" type="image/jpg" href="src/png/main-favicon-herish.jpg" />
-  <!-- aos cdn -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- google fonts-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
 
-<body class="body">
-  <audio loop="" id="audioPlayer" style="display: none">
-    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
-  </audio>
-  <div id="preloader"></div>
-  <noscript>Allow Javascript</noscript>
-
-  <header>
-    <div class="cursor-inner" id="cursor-inner"></div>
-    <div class="cursor-outer" id="cursor-outer"></div>
-
-    <div class="navbar" id="navbar">
-      <div class="hey">Hey!</div>
-      <div class="logo" tabindex="0" aria-label="Herish Chaniyara logo">
-        <div class="logo-top">
-          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar" />
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Abhishek Kumar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-      </div>
-      <div class="navbar-tabs" id="navbar-tabs">
-        <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button">
-              &#60;/Home&#62;
-            </a>
-          </li>
-
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
-            <a href="#about" aria-label="about menu button">
-              &#60;/AboutMe&#62;
-            </a>
-          </li>
-
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-            <a href="#skills" aria-label="skills menu button">
-              &#60;/Skills&#62;
-            </a>
-          </li>
-
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#projects" aria-label="projects menu button">
-              &#60;/Projects&#62;
-            </a>
-          </li>
-
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#Certifications" aria-label="projects menu button">
-              &#60;/Certifications&#62;
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- navbar tabs ends -->
-    </div>
-  </header>
-  <!-- header ends here -->
-
-  <main>
-    <!-- hamburger -->
-    <div class="hamburger" id="hamburger" data-aos="fade">
-      <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
-          <span class="burger-bar" id="burger-bar1"></span>
-          <span class="burger-bar" id="burger-bar2"></span>
-          <span class="burger-bar" id="burger-bar3"></span>
-        </button>
-      </div>
-    </div>
-    <!-- hamburger -->
-    <div class="mobiletogglemenu" id="mobiletogglemenu">
-      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
-          </a>
-        </li>
-
-        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/AboutMe&#62;
-          </a>
-        </li>
-        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Skills&#62;
-          </a>
-        </li>
-        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Projects&#62;
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- mobile toggle menu ends -->
-
-    <section class="landing-page-container" id="home">
-      <div class="blob"></div>
-
-      <div class="text-content">
-        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">N</p>
-          <p class="jello">a</p>
-          <p class="jello">m</p>
-          <p class="jello">a</p>
-          <p class="jello">s</p>
-          <p class="jello">t</p>
-          <p class="jello">e</p>
-          <p class="jello">(</p>
-          <p class="jello">)</p>
-          <p class="jello">;</p>
-          &nbsp;
-          <p class="jello">I</p>
-          <p class="jello">'</p>
-          <p class="jello">m</p>
-        </article>
-        <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">A</p>
-          <p class="jello">B</p>
-          <p class="jello">H</p>
-          <p class="jello">I</p>
-          <p class="jello">S</p>
-          <p class="jello">H</p>
-          <p class="jello">E</p>
-          <p class="jello">K</p>
-          &nbsp;
-          <p class="jello">K</p>
-          <p class="jello">U</p>
-          <p class="jello">M</p>
-          <p class="jello">A</p>
-          <p class="jello">R</p>
-        </article>
-
-        <article id="work" data-aos="fade-up" data-aos-delay="400">
-          <div>
-            <p class="jello">E</p>
-            <p class="jello">t</p>
-            <p class="jello">h</p>
-            <p class="jello">i</p>
-            <p class="jello">c</p>
-            <p class="jello">a</p>
-            <p class="jello">l</p>
-          </div>
-          <div>
-            <p class="jello">H</p>
-            <p class="jello">a</p>
-            <p class="jello">c</p>
-            <p class="jello">k</p>
-            <p class="jello">e</p>
-            <p class="jello">r</p>
-          </div>
-        </article>
-        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          Dedicated final-year student with a passion for cyber security. Equipped with hand-on experience in ethical
-          hacking techniques.
-        </p>
-
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:abhishekyogialwar@gmail.com" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p>
-              <span class="letsTalkBtn-BG"></span>
-            </button></a>
-          <div class="setting-container" id="setting-container">
-            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
-
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
-              aria-label="settings for sound and appearance"></label>
-
-            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
-                aria-label="switch appearance"></label>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Abhishek Kumar</div>
+        <div id="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-
-            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
-              <input type="checkbox" id="switchforsound" onclick="playpause()" />
-              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
-                class="needtobeinvert"></label>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
-          </div>
-          <!-- setting div ends -->
         </div>
-        <!-- contact-btn-div -->
-      </div>
-
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile 1.jpeg" alt="Abhishek Kumar profile pic">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello I'm</p>
+            <h1 class="title">Abhishek Kumar</h1>
+            <p class="section_text_p1">Ethical Hacker</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Abhishek_Kumar_Resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin logo.png" alt="Linkedin Profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/abhishek-kumar-5670a1324'">
+                <img src="./assets/github logo.png" alt="Github Profile" class="icon"
+                    onclick="location.href='https://github.com/eh-abhishek'">
+            </div>
+        </div>
     </section>
-    <!-- landing page ends here -->
-    <section class="about-section-container" id="about" data-aos="fade-up" style=" margin-top:18px;
-    padding-top: 1px;">
-      <div class="about-section">
-        <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-
-        <div class="info-dp-section">
-          <div class="about-info">
-            <p tabindex="0">
-              I'm Abhishek Kumar, a Final-year Information Technology student with a passion for cybersecurity. My
-              certifications in Ethical Hacking, and Cyber Security enable me to apply theory to practical scenarios
-              like penetration and ethical hacking.
-
-            </p>
-            <br />
-            <p tabindex="0">
-              Currently I am an intern at NullCyberX and doing Cyber Security, Cyber Crime Awareness and Penetration
-              Testing.
-            </p>
-
-
-            <!-- Resume button -->
-            <button class="resume-btn" id="resume-btn" onclick="openURL()">
-              <div class="sign">
-                <svg viewBox="0 0 640 512">
-                  <path
-                    d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-                </svg>
-              </div>
-
-              <div class="text">Resume</div>
-            </button>
-          </div>
-
-          <div class="dp" data-aos="fade-up">
-            <img src="profile pic.jpg" alt="Abhishek Kumar" tabindex="0" aria-label="image of Abhishek" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about section ends  -->
-
-    <section class="skills-section-container" id="skills">
-      <div class="skills-section">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Skills&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-
-        <div class="frontend-dev-section">
-          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0" aria-label="Security tools and technologies">
-            Tech Stack
-          </h3>
-          <ul class="tech-stack-wrapper">
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/svg/kali.svg" alt="Kali Linux skill" class="tech-stack-logo" />
-              <span class="tooltip">KALI LINUX</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/cyber crime awareness.png" alt="Cyber Crime Awareness" class="tech-stack-logo" />
-              <span class="tooltip">Cyber Crime Awareness</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/NETWORKING.png" alt="Networking skill" class="tech-stack-logo" />
-              <span class="tooltip">NETWORKING</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/AI.png" alt="AI TOOLS" class="tech-stack-logo" />
-              <span class="tooltip">AI TOOLS</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/nmap.png" alt="Nmap skill" class="tech-stack-logo" />
-              <span class="tooltip">NMAP</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/metasploit.png" alt="Metasploit skill" class="tech-stack-logo" />
-              <span class="tooltip">METASPLOIT</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/portswigger.png" alt="Burp Suite skill" class="tech-stack-logo" />
-              <span class="tooltip">BURP SUITE</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/wireshark.png" alt="Wireshark skill" class="tech-stack-logo" />
-              <span class="tooltip">WIRESHARK</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/java script.png" alt="Python skill" class="tech-stack-logo" />
-              <span class="tooltip">JAVA SCRIPT</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/owaspzap.png" alt="OWASP ZAP skill" class="tech-stack-logo" />
-              <span class="tooltip">OWASP ZAP</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/johntheripper.png" alt="johntheripper skill" class="tech-stack-logo" />
-              <span class="tooltip">JOHN THE RIPPER</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="src/png/Autopsy.png" alt="AUTOPSY skill" class="tech-stack-logo" />
-              <span class="tooltip">AUTOPSY</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- skills section ends -->
-    <section class="projects-section-container" id="projects">
-
-      <div class="projects-section-div">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            &#60;/Projects&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-        <div class="project-boxes-div">
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <!-- <img src="src/png/Shear Brilliance Logo.png" alt="Shear Brilliance website favicon" class="faviconforProject" /> -->
-                <article class="ProjectHeading">Web Penetration Testing - Tryhackme</article>
-                <p class="ProjectDescription">
-                  Vulnerability Assessment | difensive & Ofensive Security | Burpsuite
-                </p>
-              </div>
-              <div class="image-div">
-                <img src="src/png/Webpentest tryhackme.png" alt="Shear Brilliance website Testing preview image" />
-              </div>
+    <section id="about">
+        <!-- <p class="section_text_p2">Get To Know More</p> -->
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container2">
+                <img src="./assets/profile_pic.png" alt="profile picture" class="about-pic">
             </div>
-          </div>
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <!-- <img src="src/png/Shear Brilliance Logo.png" alt="Shear Brilliance website favicon" class="faviconforProject" /> -->
-                <article class="ProjectHeading">Telnet Enumeretion - HackTheBox</article>
-                <p class="ProjectDescription">
-                  Port Scanning | Access gaining | Telnet root user access | File access
-                </p>
-              </div>
-              <div class="image-div">
-                <img src="src/png/hackthbox.png" alt="Hackthebox logo" />
-              </div>
-            </div>
-        </div>
-        <div data-aos="fade-up" class="project-box-wrapper">
-          <div class="project-box project-box2" id="project-box2">
-            <div class="info-div">
-              <!-- <img src="src/png/Shear Brilliance Logo.png" alt="Shear Brilliance website favicon" class="faviconforProject" /> -->
-              <article class="ProjectHeading">Virus Detector Android App</article>
-              <p class="ProjectDescription">
-                A Open Source Virus Detection Android App Built By Flutter & Dart, Virus Total API for Backend.
-              </p>
-            </div>
-            <div class="image-div">
-              <img src="src/png/security detection.jpg" alt="Shear Brilliance website Testing preview image" />
-            </div>
-          </div>
-      </div>
-      </div>
-    </section>
-
-    <section class="projects-section-container" id="Certifications">
-
-      <div class="projects-section-div">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            &#60;/Certifications&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-        <div class="project-boxes-div">
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <article class="ProjectHeading">Masters in ethical hacking</article>
-                <p class="ProjectDescription">
-                  Ethical Hacking Terms | Data protection | Password recovery | Bwapp | Kali Linux | Proxy | Virus Creation | Payload Creation   
-                </p>
-              </div>
-              <div class="image-div">
-                <img src="src/Certifications/Masters in Ethical Hacking - Abhishek Kumar.jpg" alt="Certificate image" />
-              </div>
-            </div>
-          </div>
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <article class="ProjectHeading">AI & ChatGPT4 for Cyber Security</article>
-                <p class="ProjectDescription">
-                  Generative AI for Ethical Hacking | ChatGPT4 | Prompt Engineering | Malware Analysis
-                </p>
-              </div>
-              <div class="image-div">
-                <img src="src/Certifications/Artificial Intelligent & ChatGPT for Cyber Security 2024 - Abhishek Kumar_page-0001.jpg" alt="Certificate image" />
-              </div>
-            </div>
-          </div>
-            <div data-aos="fade-up" class="project-box-wrapper">
-              <div class="project-box project-box2" id="project-box2">
-                <div class="info-div">
-                  <article class="ProjectHeading">Cyber Forensics</article>
-                  <p class="ProjectDescription">
-                    Cyber Forensics | Vulnerability & Threats | Cyber Forensics Tools
-                  </p>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience icon.png" alt="experience logo" class="icon">
+                        <h3>Internship Experience</h3>
+                        <p>NullcyberX (Ongoing) <br><b>Penetration Tester</b></p><hr>
+                        <p>Sanchita Enterprises (6 Months) <br><b>Infrastructure Project Manager</b></p><hr>
+                        <p>SE Corp (6 Months)<br><b>Network Engineer</b></p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education icon.png" alt="experience logo" class="icon">
+                        <h3>Education</h3>
+                        <p>Pursuing BVoc in IT/Networking from <br>BSDU Jaipur</p><hr>
+                        <p>12th from Govt. Sr. Sec. School (PCM) <br>Desula, Alwar</p><hr>
+                        <p>10th from Amitoz Secondary School <br>Desula, Alwar</p>
+                        <!-- <p>10th from Amitoz Secondary School</p> -->
+                    </div>
                 </div>
-                <div class="image-div">
-                  <img src="src/Certifications/Cyber Forensics - Abhishek Kumar_page-0001.jpg" alt="Certificate image" />
+                <div class="text-container">
+                    <p>I'm Abhishek Kumar, a Final-year Information Technology student with a passion for cybersecurity. My certifications in Ethical Hacking, and Cyber Security enable me to apply theory to practical scenarios like penetration and ethical hacking.</p><hr>
+                    <p>Currently I am an intern at NullCyberX and doing Web Penetration Testing,Cyber Crime Awareness and Web Development </p>
                 </div>
-              </div>
+            </div>
         </div>
-        <div data-aos="fade-up" class="project-box-wrapper">
-          <div class="project-box project-box2" id="project-box2">
-            <div class="info-div">
-              <article class="ProjectHeading">Owasp Top 10 Quiz</article>
-              <p class="ProjectDescription">
-                Owasp Top 10 | Security Measure based on situation | Vulnerability Assesment | Malware Analysis
-              </p>
-            </div>
-            <div class="image-div">
-              <img src="src/Certifications/OWASP Top 10 Quiz - Abhishek Kumar_page-0001.jpg" alt="Certificate image" />
-            </div>
-          </div>
-    </div>
-      </div>
+        <img src="./assets/down arrow icon.png" 
+        alt="Next Section"
+        class="icon-arrow"
+        onclick="location.href='./#skills'">
     </section>
-  </main>
-  <!-- main ends here -->
-
-  <footer id="footer">
-    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
-      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
-    </button>
-    <div class="footer-background">
-      <div class="footer-blob"></div>
-    </div>
-    <div class="footer-foreground">
-      <div class="footercontainer">
-        <div class="two-words">
-          <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
-            "Learning, Living, and Leveling Up."
-          </article>
-        </div>
-        <div class="social-media-container">
-          <div class="getintouch-heading">
-            <article>GetinTouch();</article>
-          </div>
-          <div class="logos">
-            <a href="https://www.linkedin.com/in/abhishek-kumar-5670a1324?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDwrO3I7gTSODE3B2PuadIA%3D%3D"
-              target="_blank" aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
-                <path
-                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-              </svg></a>
-
-            <!-- <a href="https://github.com/Empty-Hacker" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
-                class="SocialHandle">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-              </svg></a> -->
-
-            <a href="mailto:abhishekyogialwar@gmail.com" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
-                viewBox="0 0 512 512">
-                <path
-                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-              </svg></a>
-          </div>
-        </div>
-        <div class="footer-avatar-container">
-          <img src="src/png/footer-avatar-herish.png" alt="animation-head" class="footer-avatar-img"
-            id="footer-wala-avatar" />
-          <div class="footer-avatar-face">
-            <div class="footer-avatar-eye footer-left-eye">
-              <div class="footer-pupil"></div>
+    <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-container">
+                <div class="details-containers">
+                    <h2 class="skills-sub-title">Cyber Security Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>VAPT</h3>
+                                <p>Nmap <br>Burpsuite <br>SQL Injection <br>Hydra <br>Metasploit</p>
+                            </div>
+                        </article>
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>Network Security</h3>
+                                <p>Wireshark <br>Firewall (PF Sense) <br>Ports & Protocols <br>Network Devices </p>
+                            </div>
+                        </article>
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>Information Gathering</h3>
+                                <p>OSINT <br>DNS Info<br>Google Dorks <br>Web tools</p>
+                            </div>
+                        </article>
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>Password Attacks</h3>
+                                <p>Hydra <br>Crunch <br>John the Ripper<br>Pdfcrack</p>
+                            </div>
+                        </article>
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>Operating System</h3>
+                                <p>Kali Linux<br>Tails (Live) <br>Windows Server<br>Ubuntu</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
-            <div class="footer-avatar-eye footer-right-eye">
-              <div class="footer-pupil"></div>
+            <div class="new-class">
+                <div class="details-containers">
+                    <h2 class="skills-sub-title">Web Development Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>Frontend</h3>
+                                <p>HTML <br>CSS <br>Java Script</p>
+                            </div>
+                        </article>
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>Backend</h3>
+                                <p>React JS <br>Node JS</p>
+                            </div>
+                        </article>
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>Platform</h3>
+                                <p>Vercel & Netlify<br>Git & Github <br>VS Code</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="skills-sub-title">Other skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>IOT Security</h3>
+                                <p>Texecom(IDS)<br> Biometric Devices</p>
+                            </div>
+                        </article>
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>IT Infrastructure</h3>
+                                <p>Layout Designing <br>Manage Project<br>Device Installation</p>
+                            </div>
+                        </article>
+                        <article>
+                            <!-- <img src="./assets/check icon.png" 
+                            alt="check icon"
+                            class="icon"> -->
+                            <div>
+                                <h3>Soft Skills</h3>
+                                <p>Leadership <br>Presentation<br>Communication</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <article>
-            Design by Abhishek Kumar
-          </article>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- footer ends here -->
-
-  <script src="main.js"></script>
-  <script src="professional-image-parallax.js"></script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <script>
-    function openURL() {
-      var url = "src/pdf/ABHISHEK KUMAR - Resume for Jr. penetration tester.pdf";
-
-      window.open(url, "_blank");
-    }
-  </script>
-
-  <script>
-    const cursorInner = document.getElementById("cursor-inner");
-    const cursorOuter = document.getElementById("cursor-outer");
-    const links = document.querySelectorAll("a,label,button");
-
-    document.addEventListener("mousemove", function (e) {
-      const posX = e.clientX;
-      const posY = e.clientY;
-
-      cursorInner.style.left = `${posX}px`;
-      cursorInner.style.top = `${posY}px`;
-
-      // cursorOuter.style.left = `${posX}px`;
-      // cursorOuter.style.top = `${posY}px`;
-
-      cursorOuter.animate(
-        {
-          left: `${posX}px`,
-          top: `${posY}px`,
-        },
-        { duration: 500, fill: "forwards" }
-      );
-
-      links.forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-          cursorInner.classList.add("hover");
-          cursorOuter.classList.add("hover");
-        });
-        link.addEventListener("mouseleave", () => {
-          cursorInner.classList.remove("hover");
-          cursorOuter.classList.remove("hover");
-        });
-      });
-    });
-  </script>
-  <!-- <script type="text/javascript">!function(t,e){t.artibotApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};var a=!1,i=e.createElement("script");i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.getElementsByTagName("head").item(0).appendChild(i),i.onreadystatechange=i.onload=function(){if(!(a||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState)){new window.ArtiBot({i:"3fc67b5e-6704-444d-8162-3ed8ea891c03"});a=!0}}}(window,document);</script> -->
+        </div> 
+        <img src="./assets/down arrow icon.png" 
+        alt="Next Section"
+        class="icon-arrow"
+        onclick="location.href='./#projects'">
+    </section>
+      
+    <script src="script.js"></script>
 </body>
 
 </html>
